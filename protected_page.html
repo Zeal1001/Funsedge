@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if the user is redirected from staff.html
+            var isRedirectedFromStaff = document.referrer.endsWith('staff.html');
+
+            // If not redirected from staff.html, redirect back to staff.html
+            if (!isRedirectedFromStaff) {
+                window.location.href = 'staff.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Protected Page!</h1>
+    <!-- Your content goes here -->
+</body>
+</html>
+
+
+
+
 <div class="arena-chat" data-publisher="life" data-chatroom="XH2cVO9" data-position="in-page"></div><script async src="https://go.arena.im/public/js/arenachatlib.js?p=life&e=XH2cVO9"></script>
 
 
